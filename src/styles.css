@@ -23,6 +23,10 @@ body {
   flex-direction: row;
 }
 
+.seperator {
+  transform: translate(0, -0.09em);
+}
+
 @media (orientation: portrait) {
   #app {
     font-size: 6.5vh;
@@ -30,6 +34,6 @@ body {
   }
 
   .seperator {
-    transform: rotate(90deg);
+    transform: rotate(90deg) translate(0, -0.09em);
   }
 }
