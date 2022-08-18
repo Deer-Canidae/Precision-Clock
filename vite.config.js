@@ -1,5 +1,9 @@
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
+import handlebars from "vite-plugin-handlebars"
+
+const env = process.env;
+
 export default defineConfig({
   plugins: [
     VitePWA({
@@ -19,6 +23,11 @@ export default defineConfig({
           }
         ]
         
+      }
+    }),
+    handlebars({
+      context: {
+        "gSiteKey": env.GSITE_KEY ?? ""
       }
     })
   ]
