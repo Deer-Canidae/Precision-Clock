@@ -14,6 +14,7 @@ body {
 
 #app {
   font-size: 12.25vw;
+  font-weight: bold;
   border: 0.1em solid white;
   background: transparent;
   color: white;
