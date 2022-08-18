@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  background: linear-gradient(120deg, goldenrod, crimson);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  font-size: 4rem;
+  border: 0.1em solid white;
+  background: transparent;
+  color: white;
+  padding: 0.2em 0.4em 0.3em;
+  border-radius: 0.3em;
+}
