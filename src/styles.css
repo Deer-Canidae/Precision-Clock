@@ -13,7 +13,7 @@ body {
 }
 
 #app {
-  font-size: 4rem;
+  font-size: 10vw;
   border: 0.1em solid white;
   background: transparent;
   color: white;
@@ -25,7 +25,7 @@ body {
 
 @media (orientation: portrait) {
   #app {
-    font-size: 2rem;
+    font-size: 6vh;
     flex-direction: column;
   }
 
