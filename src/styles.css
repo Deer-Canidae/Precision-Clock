@@ -1,7 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 body {
@@ -19,4 +19,17 @@ body {
   color: white;
   padding: 0.2em 0.4em;
   border-radius: 0.3em;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (orientation: portrait) {
+  #app {
+    font-size: 2rem;
+    flex-direction: column;
+  }
+
+  .seperator {
+    transform: rotate(90deg);
+  }
 }

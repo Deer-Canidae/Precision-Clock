@@ -1,5 +1,5 @@
 import "./styles.css";
-export { };
+export {};
 
 const app = document.getElementById("app")!;
 
@@ -18,8 +18,16 @@ const updateClock = () => {
   const milFormated =
     mil >= 100 ? `${mil}` : mil >= 10 ? `0${mil}` : `00${mil}`;
 
-  //string is HTML safe hence using innerHTML to save textContent overhead
-  app.innerHTML = `${hourFormated}:${minsFormated}:${secFormated}.${milFormated}`;
+  const stylizedClock: string = [
+    ...`${hourFormated}:${minsFormated}:${secFormated}.${milFormated}`,
+  ]
+    .map((el) => {
+      if (el === ":" || el === ".") return `<div class="seperator">${el}</div>`;
+      return `<div>${el}</div>`;
+    })
+    .join("");
+
+  app.innerHTML = stylizedClock;
 };
 
 // loops update for each animation frame
