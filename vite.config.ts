@@ -21,7 +21,7 @@ export default defineConfig({
           {
             src: "./icon.svg",
             sizes: "any",
-            purpose: "maskable"
+            purpose: "maskable any"
           }
         ]
         
