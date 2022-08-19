@@ -1,4 +1,4 @@
-import { defineConfig } from "vite";
+import { defineConfig, PluginOption } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 import handlebars from "vite-plugin-handlebars"
 
@@ -31,6 +31,6 @@ export default defineConfig({
       context: {
         "gSiteKey": env.GSITE_KEY ?? ""
       }
-    })
+    }) as PluginOption
   ]
 });
