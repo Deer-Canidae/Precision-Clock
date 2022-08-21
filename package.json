@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "quick-build": "vite build",
+    "build": "tsc && vite build && tsc -p tsconfig_setup.json && node ./setupjs/setup.js",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "dotenv": "^16.0.1",
     "typescript": "^4.6.4",
     "vite": "^3.0.7",
     "vite-plugin-handlebars": "^1.6.0",
